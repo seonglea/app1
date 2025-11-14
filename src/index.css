@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-holiday: #EF4444;
+  --color-leave: #F59E0B;
+  --color-weekend: #10B981;
+  --color-vacation: #3B82F6;
+  --color-excluded: #9CA3AF;
+  --color-working: #E5E7EB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-holiday {
+  background-color: var(--color-holiday);
+}
+
+.bg-leave {
+  background-color: var(--color-leave);
+}
+
+.bg-weekend {
+  background-color: var(--color-weekend);
+}
+
+.bg-vacation {
+  background-color: var(--color-vacation);
+}
+
+.bg-excluded {
+  background-color: var(--color-excluded);
+}
+
+.bg-working {
+  background-color: var(--color-working);
+}
+
+/* 스크롤바 스타일링 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
